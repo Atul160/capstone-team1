@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
+import PieChartComponent from './chart';
 // import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Typography variant="h3" gutterBottom>
                 Team 1 CapStone Demo
             </Typography>
+            <PieChartComponent />
         </Box>
     );
 };

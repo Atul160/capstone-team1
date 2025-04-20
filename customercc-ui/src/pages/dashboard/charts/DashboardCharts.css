@@ -1,0 +1,44 @@
+.dashboard-charts {
+    padding: 20px;
+    background-color: white;
+    /*overflow: auto;*/
+    overflow-y: auto;
+    height: calc(100vh - 200px); /* Adjust the height as needed */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.chart-card {
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+    flex: 1 1 calc(33.333% - 16px);
+    box-sizing: border-box;
+}
+
+.chart-card:hover {
+    /*transform: translateY(-10px);*/
+    /*transform: scale(1.03);*/
+    /*box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);*/
+}
+
+@media (max-width: 768px) {
+    .chart-card {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .chart-card {
+        margin-bottom: 20px;
+    }
+}

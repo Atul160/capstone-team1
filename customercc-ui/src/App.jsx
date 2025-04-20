@@ -11,6 +11,7 @@ import CreditCards from './pages/CreditCards';
 import ProtectedRoute from "./handlers/ProtectedRoute";
 import Header from './components/header';
 import { Copyright } from "./components/footer";
+import Dashboard from './pages/dashboard';
 // import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/home" element={<Home />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/signup" element={<SignUp />} />
           <Route path="/verify-email" element={<EmailVerification />} />
